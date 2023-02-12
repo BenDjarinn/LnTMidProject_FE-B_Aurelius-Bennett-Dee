@@ -1,0 +1,702 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    background-color:#ddd9d9;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.0rem;
+    display: flex;
+    box-shadow: 0 10px 17px -5px #747373;
+  
+}
+
+
+
+
+
+.logo {
+    padding-left: 12.0%;
+    font-family: 'Inter', sans-serif;
+}
+
+.nav-menu {
+    padding-right: 9.5%;
+    
+}
+
+
+
+ul {
+    
+    display: flex;
+    gap: 75px;
+}
+
+ul li {
+    display: inline-block;
+    text-decoration: none;
+    padding-top: 9px;
+    
+    font-weight: 700;
+}    
+    
+li a {
+    text-decoration: none;
+    font-size: 17px;
+    color: rgb(0, 0, 0);
+    font-family: sans-serif;
+    padding-bottom: 10px;
+    
+
+}  
+
+li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #4CAF50;
+    margin: auto;
+    display: block;
+    margin-top: 10px;
+    
+}
+
+li a:hover::after {
+    
+    width: 100%;
+    transition: width 0.3s linear;
+}
+
+
+
+
+
+                           
+
+
+/* Hero section */
+#hero {
+    
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    align-items: flex-start;
+    padding-top: 12.5rem;
+    background-color: #ddd9d9;
+    height: 90vh;
+    color: black;
+    font-family: sans-serif;
+}
+
+
+
+#hero h1 {
+    width: 16ch;
+    animation: typing 2s steps(16), blink .6s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2.5px solid;
+    font-family: monospace;
+    font-size: 2.5em;
+
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+
+    
+
+
+
+
+#hero h2 {
+    font-size: 25px;
+
+}
+
+#hero .hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    font-size: 20px;
+    
+}
+
+
+
+
+#hero .hero-content p {
+    font-size: 24px;
+    font-weight: 400;
+    font-family: sans-serif;
+} 
+
+
+
+
+#hero .hero-content button {
+    padding: 10px 18px;
+    font-size: 17px;
+    width: 200px;
+    border-radius: 5px;
+    border: none;
+    color: #ffffff;
+    background-color:  #4CAF50;
+}
+
+#hero .hero-content button:hover {
+    background-color:  #3f9c42;
+}
+
+
+#hero .hero-content .socmed-logo {
+
+    display: flex;
+    gap: 2.0rem;
+}
+
+#hero .hero-content .socmed-logo i {
+    color: rgb(129, 129, 129);
+    font-size: 30px;
+}
+
+#hero .hero-content .socmed-logo i:hover {
+    color: rgb(65, 65, 65);
+    font-size: 35px;
+}
+
+
+
+
+
+/* About me section */
+
+#about {
+    height: auto;
+    padding-bottom: 100px;
+    background-color: #d4d0d0b2;
+ 
+}
+
+#about .container h4 {
+    display: flex;
+    font-size: 30px;
+}
+
+#about .container {
+    padding: 4.5rem 9.5%;
+    display: flex;
+    flex-direction: column;
+    gap: 4.5rem;
+
+}
+
+#about .about-content .right {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+
+#about .about-content .left img {
+    height: 450px;
+    width: 390px;
+    border-radius: 40px;
+    
+}
+
+#about .container .about-content {
+    display: flex;
+    gap: 6rem;
+    justify-content: left;
+}
+
+.right p {
+    font-size: 20px;
+    width: 85%;
+    text-align: justify;
+    
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table td {
+    font-weight: 600;
+}
+
+table th {
+    background-color: #4792cf;
+    color: white;
+}
+
+td, th {
+    border: 1px solid #0a0a0a;
+    
+  }
+
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+
+  /* My portfolio */
+
+  #porto {
+    height: auto;
+    padding-bottom: 15.5rem;
+    padding-top: 6.5rem;
+    background-color: #ddd9d9;
+  }
+
+  #porto .container {
+    
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+  }
+
+  #porto h4 {
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+
+    
+  }
+
+
+
+  .porto-content {
+    display: flex;
+    gap: 4.0rem;
+    justify-content: center;
+  }
+
+  .porto-content img {
+    width: 400px;
+    height: 300px;
+    border-radius: 3px;
+  }
+
+  #porto hr {
+    background-color: #56a9ec;
+    height: 6px;
+    width: 220px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .hr {
+    display: flex;
+    justify-content: center;
+    border: none;
+  }
+
+  .project-desc h1 {
+    padding-top: 1.5rem;
+    text-align: center;
+    font-size: 23px;
+  }
+
+  .card {
+    height: 300px;
+    box-shadow: 5px 5px 20px black;
+
+  }
+
+  /* Contact Me */
+
+  #contact {
+    height: 500px;
+    padding-bottom: 60rem;
+    padding-top: 4.5rem;
+    background-color: #bbb8b8b2;
+    font-weight: normal;
+  }
+
+  #contact .container {
+    
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+  }
+
+  #contact h4 {
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+
+    
+  }
+
+
+  #contact hr {
+    background-color: #56a9ec;
+    height: 6px;
+    width: 220px;
+    display: flex;
+    justify-content: center;
+  }
+
+
+
+  .input-user {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .input-user label {
+    font-size: 16px;
+    color: #000000;
+    margin-left: 0.5rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: bolder;
+  }
+
+
+  .contact-box {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  
+
+  .input-user input {
+    width: 650px;
+    height: 2px;
+    padding: 1.5rem 1rem;
+    background-color: #ffffff;
+    border: 1px solid #ced4da;
+    border-radius: 0.5rem;
+    
+  }
+
+
+  ::placeholder {
+    color: rgb(121, 121, 121);
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    align-items: center;
+  }
+
+  #message {
+    text-align: center;
+    margin: auto;
+    font-family: 'Inter', sans-serif;
+    color: black;
+    font-size: 19px;
+    font-weight: bold;
+    padding-top: 19px;
+    padding-bottom: 5px;
+}
+
+textarea#komen {
+    
+    border-radius: 0.5rem;
+    width: 650px;
+    padding: 1.0rem 1rem;
+    margin-bottom: 2px;
+    resize: none;
+    border: 1px solid #ced4da;
+    height: 180px;
+    background-color: #ffffff;
+}
+
+
+#submitButton {
+    text-align: center;
+    padding-top: 30px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: #FFFFFF;
+    width: 134px;
+    height: 50px;
+    border-radius: 6px;
+    border: 1px solid #E1AFAF;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: #08acac;
+}
+
+footer {
+    padding-bottom: 40px;
+    text-align: center;
+ 
+}
+
+footer h1 {
+    font-size: 28px;
+    padding-top: 2.5rem;
+    padding-bottom: 15px;
+}
+
+
+
+
+.cr
+{
+    font-size: 18px;
+    font-family: 'Inter';
+    color: #5A5353;
+    padding-top: 0.5rem;
+    padding-left: 10px;
+    font-weight: normal;
+}
+
+table {
+    height: 120px;
+    width: 85%;
+}
+
+.skilldesc {
+    padding-top: 20px;
+    width: 80%;
+}
+
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+
+#icon {
+    display: none;
+    position: relative;
+    top: -5px;
+}
+
+.menu-toggle input {
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    opacity: 0;
+    left: -5px;
+    top: -3px;
+    cursor: pointer;
+}
+
+#toggler {
+    display: none;
+}
+
+
+
+
+
+
+
+
+/* Size Mobile */
+
+@media screen and (min-width: 400px) and (max-width: 767px) {
+
+    #icon {
+        display: block;
+        font-size: 30px;
+    }
+  
+
+
+    #hero .container {
+        padding: 0 3.3rem;
+    }
+
+    #hero h1 {
+        font-size: 40px;
+    }
+
+    .about-content {
+        padding: 0 2.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .right p {
+        width: 100%;
+    }
+
+    table {
+        width: 100%;
+        height: 150px;
+    }
+
+    
+
+    .porto-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8.5rem;
+    }
+
+    .input-user input {
+        width: 450px;
+        height: 2px;
+        padding: 1.5rem 1rem;
+        background-color: #ffffff;
+        border: 1px solid #ced4da;
+        border-radius: 0.5rem;
+        
+      }
+
+      textarea#komen {
+    
+        border-radius: 0.5rem;
+        width: 450px;
+        padding: 1.0rem 1rem;
+        margin-bottom: 2px;
+        resize: none;
+        border: 1px solid #ced4da;
+        height: 180px;
+        background-color: #ffffff;
+    }
+
+    footer h1 {
+        font-size: 23px;
+        padding-top: 2.5rem;
+        padding-bottom: 15px;
+    }
+    
+    
+    
+    
+    .cr
+    {
+        font-size: 15px;
+        font-family: 'Inter';
+        color: #5A5353;
+        padding-top: 0.5rem;
+        padding-left: 10px;
+        font-weight: normal;
+       
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    
+
+    .nav-menu ul {
+       display: flex;
+       flex-direction: column;
+       align-items: column;
+       position: absolute;
+       width: 100%;
+       height: 30vh;
+       background: #b7b8b9;
+       top: 90px;
+       right: -100%;
+       gap: 30px;
+       text-align: center;
+       padding-top: 2.5rem;
+       transition: all .5s;
+    }
+
+    .nav-menu ul li {
+        border-bottom: none;
+    }
+
+    .menu-toggle {
+        display: flex;
+        padding-right: 2.0rem;
+    }
+
+    li a::after {
+        display: none;
+        
+
+        
+    }
+    
+    li a:hover::after {
+        display: none;
+      
+    }
+
+    li a:hover {
+        color: rgb(97, 97, 97);
+    }
+
+    #toggler:checked ~ ul {
+        right: 0;
+        z-index: 2;
+    }
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+    
+}
+
+
+
+/* Size Tablet */
+@media screen and (min-width: 768px) and (max-width: 1435px) {
+    .porto-content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6.5rem;
+    }
+}
+
+
+
+
+ 
+
+  
+ 
+
+
+
